@@ -33,3 +33,18 @@
   .newsletter-form input,.newsletter-form button{min-height:48px}
   .ad-slot-large{min-height:70px}
 }
+
+
+/* Stage 3 — visual article cards */
+.card{overflow:hidden}
+.card-image{aspect-ratio:16/10;width:100%;border-bottom:1px solid var(--line)}
+.card-image.placeholder,
+.story-image.placeholder,
+.hero-image.placeholder{background:linear-gradient(135deg,#e8dfd0,#c9b69a)}
+.story-image{width:100%;aspect-ratio:16/10}
+.story-row{align-items:stretch}
+.story-row .story-image{min-height:100%}
+@media(max-width:760px){
+  .card-image{aspect-ratio:16/10}
+  .story-image{min-height:0}
+}
