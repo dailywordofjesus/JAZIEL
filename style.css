@@ -287,3 +287,62 @@
     padding-bottom:55px;
   }
 }
+
+
+/* Stage 6 — final mobile polish */
+html{
+  scroll-padding-top:90px;
+}
+.article-body h2{
+  scroll-margin-top:96px;
+}
+.article-share{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  border-top:1px solid var(--line);
+}
+.article-share .share-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px !important;
+}
+.article-share .share-buttons a{
+  display:inline-block;
+  background:transparent;
+  border:1px solid var(--line);
+  border-radius:0;
+}
+footer .footer-grid h3{
+  margin:0 0 15px;
+  color:#fff;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+footer .footer-grid > div > a:not(.brand){
+  color:#aaa49c;
+}
+footer .footer-bottom{
+  border-top:1px solid #4a4036;
+  margin-top:45px;
+  padding-top:18px;
+  color:#89827a;
+  font-size:11px;
+}
+@media(max-width:600px){
+  .article-share{
+    display:block;
+    margin-top:42px;
+    padding-top:22px;
+  }
+  .article-share .share-buttons{
+    margin-top:14px;
+  }
+  .article-share .share-buttons a{
+    min-width:64px;
+  }
+  footer .footer-grid h3{
+    color:#fff;
+  }
+}
